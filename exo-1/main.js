@@ -1,5 +1,5 @@
 
-
+$(document).ready(function(){
 var buttons = document.querySelectorAll("button");//j'ai séléctionné mes trois boutton avec le sélecteur css query
 var score=document.getElementById("box2");
 let count = 0;
@@ -47,4 +47,4 @@ for (let i = 0; i < buttons.length; i++) {//j'ai créé une loop je l'ai initial
   
   
 }
-
+});
