@@ -19,20 +19,16 @@ for (let i = 0; i < buttons.length; i++) {//j'ai créé une loop je l'ai initial
  
     if (gamer1===gamer2) {
       result = "Egalité";
-    }
-    else if ((gamer1=== "Pierre" && gamer2 === "Ciseaux") || (gamer1 === "Ciseaux" && gamer2 === "Feuille") || (gamer1 === "Feuille") && (gamer2 === "Pierre")) {
+    }else if ((gamer1=== "Pierre" && gamer2 === "Ciseaux") || (gamer1 === "Ciseaux" && gamer2 === "Feuille") || (gamer1 === "Feuille") && (gamer2 === "Pierre")) {
       result = " joueur 1 a gagné";
       gamerA++;
        score.innerHTML="J'ai gagné:" +gamerA +" fois";
       $("#btn").click(function(){
         $("#box3").html("le pourcentage de victoire est"+gamerA*100/count+"%")
         //console.log(gamerA*100/count); 
-        
        })
-    }
-    else {
+    } else {
       result = "joueur 2 a gagné";
-   
     }
  
   document.getElementById("box").innerHTML = `
