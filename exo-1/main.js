@@ -10,7 +10,6 @@ var numberChoice=$("button").click(function() {
   $("#box1").html("nombre d'essaie: "+count);
 })
 
-
 for (let i = 0; i < buttons.length; i++) {//j'ai créé une loop je l'ai initialisé i=index 0 et le i sera inférrieur au choix des boutton et j'ai incrémenter pour sortir de la loop
   buttons[i].addEventListener('click', displayChoice)//j'ai ajouté un boutton evenement clique et j'ai nommé ma fonction
   function displayChoice(){//j'ai crée ma fonction
@@ -40,11 +39,7 @@ for (let i = 0; i < buttons.length; i++) {//j'ai créé une loop je l'ai initial
   Joueur1 : ${gamer1}</br>
   Joueur2 : ${gamer2} <br/>
   Résultat : ${"resultat instantané: "+result}
-`  ;
-
-    
+`  ; 
   };
-  
-  
 }
 });
